@@ -7,7 +7,8 @@ let(:mockTag) { double :tag }
 
   describe '#add_note' do
     it 'creates notes' do
-       expect(subject.add_note(mockTag)).to include 'My first office note'
+      
+      expect(subject.create_note(mockNote, mockTag)).to include( { note: mockNote, tag: mockTag })
     end
   end
 

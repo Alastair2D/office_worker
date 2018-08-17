@@ -6,8 +6,8 @@ class Notebook
     @notes = []
   end
 
-  def add_note(tag)
-    notes
+  def create_note(note, tag)
+    note = { note: note, tag: tag}  # a note with two key value pairs
   end
 
 end
